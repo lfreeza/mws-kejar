@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to My Site</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <style>
+        .container  {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 30px 100px 100px 100px 30px;
+            grid-gap: 4px;
+      
+           }
+         .menu    {
+            grid-column: 1 / 5;
+            background-color: lightblue;
+           }
+         .sidebar   {
+            grid-column: 1;
+            grid-row: 2 / 5;
+            background-color: lightyellow;
+           }  
+         .konten  {
+            grid-column: 2/5;
+            background-color: pink;
+           }   
+          .footer   {
+            grid-column: 1/5;
+            grid-row: 5/6;
+            background-color: green;
+           }    
+        
+        
+         
+        
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="menu"><img src="/images/menu.png"></div>
+        <div class="sidebar"><img src="/images/3kali4.jpg"></div>
+      <div class="konten"><a href="project1/add2numbers.html">Menjumlahkan dua angka</a></div>
+         <div class="konten"><a href="project2/mapbox.html">Lokasi Istimewa dengan Mapbox</a></div>
+        <div class="konten"><a href="project3/kuliner.html">Kuliner</a></div>
+        <div class="footer">Luthfi Fachriza Sandi</div>
+    </div>
+   <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+    </script>
+
+
+
+  </body>
+</html>
