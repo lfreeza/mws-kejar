@@ -1,2 +1,2 @@
-# mws-google
-Project for Google Mobile Web Specialist
+# mws-kejar
+Project for Google Mobile Web Specialist Kejar
